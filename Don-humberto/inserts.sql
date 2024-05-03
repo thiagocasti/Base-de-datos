@@ -107,16 +107,16 @@ VALUES
 
 INSERT INTO oficina (codigo_oficina, ciudad, pais, region, codigo_postal, direccion, direccion2, telefono, codigo_jefe_oficina)
 VALUES
-(1, 'Ciudad 1', 'País 1', 'Argentina', 12345, '	General Hornos 690 ', 'Dirección 2', '123456789', 10001),
-(2, 'Ciudad 2', 'País 2', 'Argentina', 54321, '	Av Moreno Sur 1640', 'Dirección 4', '987654321', 10002),
-(3, 'Ciudad 3', 'País 3', 'Argentina', 67890, '	Libertad 1617', 'Dirección 6', '111222333', 10003),
-(4, 'Ciudad 4', 'País 4', 'Argentina', 98765, '	Hipólito Yrigoyen 4000', 'Dirección 8', '444555666', 10004),
-(5, 'Ciudad 5', 'País 5', 'Suiza', 34567, '181, Chemin des Alpages', 'Dirección 10', '777888999', 10005),
-(6, 'Ciudad 6', 'País 6', 'China', 23456, ' Dong Liao Xian Wei Dang Shi Yan Jiu Ban Gong Shi （ Xian Wei Wu Lou ）', 'Dirección 12', '555666777', 10006),
-(7, 'Ciudad 7', 'País 7', 'Argentina', 87654, '	Av de Mayo 878', 'Dirección 14', '222333444', 10007),
-(8, 'Ciudad 8', 'País 8', 'Argentina', 45678, '	Pachecho de Melo', 'Dirección 16', '888999000', 10008),
-(9, 'Ciudad 9', 'País 9', 'Argentina', 76543, '	Av Santa Fe 3202', 'Dirección 18', '333444555', 10009),
-(10, 'Ciudad 10', 'País 10', 'Argentina', 56789, 'Corrientes 1098', 'Dirección 20', '999000111', 10010);
+(1, 'Buenos aires', 'Argentina', NULL, 12345, '	General Hornos 690 ', 'Dirección 2', '123456789', 10001),
+(2, 'Buenos aires', 'Argentina', NULL, 54321, '	Av Moreno Sur 1640', 'Dirección 4', '987654321', 10002),
+(3, 'Buenos aires', 'Argentina', NULL, 67890, '	Libertad 1617', 'Dirección 6', '111222333', 10003),
+(4, 'Buenos aires', 'Argentina', NULL, 98765, '	Hipólito Yrigoyen 4000', 'Dirección 8', '444555666', 10004),
+(5, 'Corippo', 'Suiza', NULL, 34567, '181, Chemin des Alpages', 'Dirección 10', '777888999', 10005),
+(6, 'Wuhan', 'China', NULL, 23456, ' Dong Liao Xian Wei Dang Shi Yan Jiu Ban Gong Shi （ Xian Wei Wu Lou ）', 'Dirección 12', '555666777', 10006),
+(7, 'Buenos aires', 'Argentina', NULL, 87654, '	Av de Mayo 878', 'Dirección 14', '222333444', 10007),
+(8, 'Buenos aires', 'Argentina', NULL, 45678, '	Pachecho de Melo', 'Dirección 16', '888999000', 10008),
+(9, 'Buenos aires', 'Argentina', NULL, 76543, '	Av Santa Fe 3202', 'Dirección 18', '333444555', 10009),
+(10, 'Buenos aires', 'Argentina', NULL, 56789, 'Corrientes 1098', 'Dirección 20', '999000111', 10010);
 
 INSERT INTO detalle_pedido (codigo_pedido, codigo_producto, cantidad, precio_unidad, detalle_pedidocol)
 VALUES
