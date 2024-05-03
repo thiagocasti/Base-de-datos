@@ -23,17 +23,17 @@ USE `mydb` ;
 DROP TABLE IF EXISTS `mydb`.`producto` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`producto` (
-  `codigo_producto` BIGINT(20) NOT NULL,
+  `codigo_producto` BIGINT(20) NOT NULL ,
   `nombre` VARCHAR(50) NULL,
   `proveedor` VARCHAR(32) NOT NULL,
-  `descripcion` TEXT NULL DEFAULT CURRENT_TIMESTAMP,
+  `descripcion` TEXT NULL,
   `cantidad_en_stock` SMALLINT NULL,
   `precio_venta` DECIMAL(15,2) NULL,
   `precio_proveedor` DECIMAL(15,2) NULL,
-  `codigo_proveedor` INT NOT NULL,
-  `codigo_receta` BIGINT(20) NOT NULL,
-  `id_productos` INT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`codigo_producto`, `codigo_proveedor`, `codigo_receta`));
+  `id_productos` INT NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id_productos`, `id_productos`)
+);
+
 
 
 -- -----------------------------------------------------
@@ -193,7 +193,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`oficina` (
   `region` VARCHAR(15) NOT NULL,
   `codigo_postal` SMALLINT NOT NULL,
   `direccion` VARCHAR(45) NULL,
-  `direccion2` VARCHAR(45) NULL,
+  `direccion2` VARCHAR(45) NULL,ne auto
   `telefono` VARCHAR(45) NULL,
   `codigo_jefe_oficina` INT NOT NULL,
   `id_oficina` INT NULL AUTO_INCREMENT,
@@ -252,7 +252,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`orden` (
   `orden_detalles` VARCHAR(45) NULL,
   `cuit` VARCHAR(45) NULL,
   `firma` VARCHAR(45) NULL,
-  PRIMARY KEY (`codigo_cliente`, `codigo_orden`),
+  PRIMARY KEY (`codigo_cliente`, `codigo_orden`, `idorden` ),
   CONSTRAINT `fk_orden_1`
     FOREIGN KEY (`codigo_cliente`)
     REFERENCES `mydb`.`cliente` (`codigo_cliente`)
